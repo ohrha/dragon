@@ -1,35 +1,56 @@
-<div class ="navbar-fixed">
-  <nav class = "green lighten-4">
-    <div class = "container">
-      <div class = "nav-wrapper">
-        <a href = "#" class = "brand-logo">SHINE DESIGNS</a>
-        <a href = "#" data-target = "mobile-nav" 
-        class = "sidenav-trigger">
+<div class="navbar-fixed">
+  <nav class="white lighten-4">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo ">SHINE DESIGNS</a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
         <i class = "material-icons">menu</i>
         </a>
-        <ul class = "right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down">
           <li>
             <a href="#home"> Home</a>
           </li>
-                    <li>
+          <li>
             <a href="#search"> Search</a>
           </li>
-                    <li>
+          <li>
             <a href="#popular"> Popular</a>
           </li>
-                    <li>
+          <li>
             <a href="#gallery"> Gallery</a>
           </li>
-                    <li>
+          <li>
             <a href="#contact"> Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-
-
-
-
 </div>
+<ul class="sidenav" id="mobile-nav">
+  <li>
+    <a href="#home"> Home</a>
+  </li>
+  <li>
+    <a href="#search"> Search</a>
+  </li>
+  <li>
+    <a href="#popular"> Popular</a>
+  </li>
+  <li>
+    <a href="#gallery"> Gallery</a>
+  </li>
+  <li>
+    <a href="#contact"> Contact</a>
+  </li>
+</ul>
+
+
+
+
+<script>
+  const sideNav = document.querySelector('.sidenav');
+  console.log(sideNav)
+  M.Sidenav.init(sideNav, {})
+
+</script>
