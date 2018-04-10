@@ -16,7 +16,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
 
-
+<link rel="stylesheet" href="style.css"/>
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
   <!-- Compiled and minified JavaScript -->
 
@@ -32,10 +32,13 @@
     document.addEventListener("DOMContentLoaded", function () {
       const sideNav = document.querySelector('.sidenav');
       const carousel = document.querySelector('.carousel');
+      const slider = document.querySelector('.slider');
 
       console.log(sideNav)
       console.log(carousel);
+      console.log(slider)
       M.Sidenav.init(sideNav, {})
+      M.Slider.init(slider,{});
       M.Carousel.init(carousel,{
 
         duration: 200,
