@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato|Lora|Montserrat|Muli|Open+Sans|Open+Sans+Condensed:300|Playfair+Display|Raleway|Roboto|Roboto+Condensed|Tajawal"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
 
@@ -31,8 +31,17 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const sideNav = document.querySelector('.sidenav');
+      const carousel = document.querySelector('.carousel');
+
       console.log(sideNav)
+      console.log(carousel);
       M.Sidenav.init(sideNav, {})
+      M.Carousel.init(carousel,{
+
+        duration: 200,
+        numVisible:1,
+        fullWidth:true
+      })
     });
   </script>
 </body>
